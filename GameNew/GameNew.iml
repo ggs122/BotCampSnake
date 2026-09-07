@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
+    <orderEntry type="module" module-name="graphics" />
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
