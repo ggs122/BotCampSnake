@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BotCampSnake.iml" filepath="$PROJECT_DIR$/BotCampSnake.iml" />
       <module fileurl="file://$PROJECT_DIR$/GameNew/GameNew.iml" filepath="$PROJECT_DIR$/GameNew/GameNew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/graphics/graphics.iml" filepath="$PROJECT_DIR$/graphics/graphics.iml" />
     </modules>
   </component>
 </project>
