@@ -11,6 +11,7 @@ import java.awt.*;
 public class JFrameGameWindow extends JFrame {
 
     private final Renderer renderer;
+    private final Rect drawingArea;
 
     public JFrameGameWindow(String title, int width, int height) {
 
@@ -25,6 +26,9 @@ public class JFrameGameWindow extends JFrame {
         renderer.add(new Rect(20, 20, 200, 100));
         renderer.add(new Text("Hello", new Point(200, 200), Color.RED));
 
+        int upperY = height - getContentPane().getSize().height;
+        drawingArea = new Rect(0, upperY, width, height - upperY);
+
         setVisible(true);
 
     }
@@ -32,5 +36,13 @@ public class JFrameGameWindow extends JFrame {
     @Override
     public void paint(Graphics g) {
         renderer.render(g);
+    }
+
+    public Rect getDrawingArea() {
+        return drawingArea;
+    }
+
+    public Renderer getRenderer() {
+        return renderer;
     }
 }
