@@ -1,6 +1,7 @@
 package snake.graphics.window;
 
 import snake.graphics.drawable.Drawable;
+import snake.graphics.basic.Color;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -16,8 +17,7 @@ public class Renderer {
 
     public void render(Graphics g) {
         for (Drawable d : drawables) {
-            //TODO -> Definir cor
-            g.setColor(Color.GREEN);
+            g.setColor(toAwtColor(d.getColor()));
             d.draw(g);
         }
     }
@@ -28,5 +28,14 @@ public class Renderer {
 
     public void remove (Drawable drawable) {
         drawables.add(drawable);
+    }
+
+    private java.awt.Color toAwtColor(Color color) {
+        return switch (color) {
+            case BLACK -> java.awt.Color.BLACK;
+            case WHITE -> java.awt.Color.WHITE;
+            case GREEN -> java.awt.Color.GREEN;
+            case RED ->   java.awt.Color.RED;
+        };
     }
 }

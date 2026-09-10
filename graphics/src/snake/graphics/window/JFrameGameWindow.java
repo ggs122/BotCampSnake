@@ -23,7 +23,7 @@ public class JFrameGameWindow extends JFrame {
 
         renderer = new Renderer();
         renderer.add(new Rect(20, 20, 200, 100));
-        renderer.add(new Text("Hello", new Point(200, 200), Color.BLACK));
+        renderer.add(new Text("Hello", new Point(200, 200), Color.RED));
 
         setVisible(true);
 
