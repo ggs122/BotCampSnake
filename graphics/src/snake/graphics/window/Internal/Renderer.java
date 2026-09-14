@@ -1,4 +1,4 @@
-package snake.graphics.window;
+package snake.graphics.window.Internal;
 
 import snake.graphics.drawable.Drawable;
 import snake.graphics.basic.Color;
